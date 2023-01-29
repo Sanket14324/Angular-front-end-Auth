@@ -1,0 +1,120 @@
+
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+  body{
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #666;
+  }
+ 
+  h1{
+    padding: 10px 0;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+  
+  }
+  
+  .main{
+    max-width: 340px;
+    min-height: 250px;
+    padding: 10px 0;
+    margin: auto;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+    box-shadow: 8px 10px 15px rgba(0,0,0,.8);
+    /* background: #ebebeb; */
+    /* background: #18A558; */
+    margin-top: 100px;
+    color: black;
+    border-color: 5px solid black;
+  
+  }
+  
+  .form{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    margin:  0 30px;
+  }
+  
+  input {
+    width: calc(100% - 57px);
+    font-size: 18px;
+    height: 30px;
+    margin: 13px 5px 2px -5px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: solid 1px black;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+    background: #fff;
+  }
+  /* input{
+    font-size: 18px;
+    border-radius: 3px;
+    padding: 5px;
+  } */
+
+  .select{
+    text-align: center;
+    font-size: 5px;
+  
+  }
+
+  .role-field{
+    width: 8em;
+    height: 3em;
+  }
+ 
+  .button-block {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .btn{
+    width: 80%;
+    padding-left:10px;
+    padding: 10px 0;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: none;
+    background: #bec1bf;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(9, 9, 9);
+    text-align: center;
+  }
+  .btn:hover{
+    background-color: #fdfdfd;
+    border: 1px solid black;
+    box-shadow: 0 2px 3px black;
+  }
+  .btn:visited{
+    display: hidden;
+  }
+
+
+  .button{
+    align-self: center;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+  }
+
+
+  .info{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }

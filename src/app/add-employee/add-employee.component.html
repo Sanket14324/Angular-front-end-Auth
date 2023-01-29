@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./add-employee.component.css" rel="stylesheet">
+  <title>Add Employee</title>
+</head>
+<body>
+    <div class="main">
+      <div style="background-color: blue;">{{role}}</div>
+      <div class ="heading">
+        <h1>Register Employee</h1>
+      </div>
+      <hr>
+      <form class="form">
+        <div class="input1">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" [(ngModel)]="employee.name" value="John"><br>
+        </div>
+        <div class="input2">
+          <label for="email">Email:</label><br>
+          <input type="text" id="email" name="email" [(ngModel)]="employee.email" value="xyz@gmail.com">
+        </div>
+        <div class="input2">
+          <label for="email">Password:</label><br>
+          <input type="text" id="password" name="password" [(ngModel)]="employee.password" value="xyz@gmail.com">
+        </div>
+      </form>
+      <hr>
+      <div class="select">
+        <mat-radio-group [(ngModel)]="employee.role" aria-label="Select an option">
+          <mat-radio-button  value="ROLE_ADMIN">ADMIN</mat-radio-button>
+          <mat-radio-button  value="ROLE_USER">USER</mat-radio-button>
+        </mat-radio-group>
+      </div>
+      <div class="button-block">
+        <div>
+            <button class="btn" type="submit" value="Register" name="submit_reg" (click)="addEmployee(); alertMessage()">Submit</button>
+        </div>
+        <a routerLink="/home" class="button" (click)="navigateTo()">Go Back</a> 
+      </div>
+    </div>
+</body>
+</html>

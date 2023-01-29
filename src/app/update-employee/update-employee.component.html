@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./update-employee.component.css" rel="stylesheet">
+  <title>Add Employee</title>
+</head>
+<body>
+    <div class="main">
+
+      <div class ="heading">
+        <h1>Update Employee</h1>
+      </div>
+      <hr>
+      <form class="form">
+        <div class="input1">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" [(ngModel)]="employee.name" value="John"><br>
+        </div>
+        <div class=""input2>
+          <label for="email">Email:</label><br>
+          <input type="text" id="email" name="email" [(ngModel)]="employee.email" value="xyz@gmail.com">
+        </div>
+      </form>
+      <hr>
+      <div class="button-block">
+        <div>
+            <button class="btn" type="submit" value="Register" name="submit_reg" (click)="updateEmployeeById(); alertMessage()">Submit</button>
+        </div>
+        <a routerLink="/admin" class="button" routerLinkActive="active">Go to home</a> 
+        
+      </div>
+      
+    </div>
+</body>
+</html>
+

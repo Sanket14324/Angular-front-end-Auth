@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="./login.component.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      
+    </style>
+
+
+</head>
+<body>
+  <body>
+    <form >
+      <h1>Login Form</h1>
+      <div class="formcontainer">
+      <hr/>
+      <div class="container">
+        <label for="uname"><strong>Email</strong></label>
+        <input type="email" placeholder="Enter Email" name="uname" [(ngModel)]="employee.email" required>
+        <label for="psw"><strong>Password</strong></label>
+        <input type="password" placeholder="Enter Password" name="psw"[(ngModel)]="employee.password"  required>
+      </div>
+      <button type="submit" (click)="loginEmployee()">Login</button>
+      <button type="button" routerLink="/add">Not having account?</button>
+      <div class="container" style="background-color: #eee">
+        <label style="padding-left: 15px">
+        <input type="checkbox"  checked="checked" name="remember"> Remember me
+        </label>
+        <span class="psw"><a href="#"> Forgot password?</a></span>
+      </div>
+      </div>
+    </form>
+  </body>
+</body>
+</html>
